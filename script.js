@@ -382,6 +382,87 @@ const recipes = {
             'Reduce heat to 375°F (190°C) and bake 35-40 minutes more until golden.',
             'Cool on wire rack for at least 2 hours before slicing.'
         ]
+    },
+    'tiramisu': {
+        title: 'Classic Tiramisu',
+        story: 'Tiramisu taught me about the power of assembly. The "why" behind dipping ladyfingers quickly? They\'re sponges—too long and they disintegrate; too short and they\'re dry. I learned that tempering the egg yolks with sugar syrup (pâte à bombe) makes the mascarpone cream safe and silky smooth. The cocoa powder on top isn\'t just for looks; its bitterness cuts through the rich cream. This no-bake dessert taught me that you don\'t always need an oven to create a masterpiece.',
+        ingredients: [
+            '6 egg yolks',
+            '3/4 cup granulated sugar',
+            '2/3 cup milk',
+            '1 1/4 cups heavy cream',
+            '1/2 tsp vanilla extract',
+            '1 lb mascarpone cheese, room temperature',
+            '1/2 cup strong brewed coffee, room temperature',
+            '2 tbsp rum (optional)',
+            '2 packages ladyfingers',
+            '1 tbsp unsweetened cocoa powder'
+        ],
+        instructions: [
+            'Whisk egg yolks and sugar in a bowl over simmering water (double boiler) for about 10 mins until pale and thick. Remove from heat.',
+            'Whisk in milk and cook stirring constantly until mixture coats the back of a spoon. Cover and refrigerate 1 hour.',
+            'Beat mascarpone until smooth. Fold into chilled egg mixture.',
+            'Whip heavy cream with vanilla to stiff peaks. Fold into mascarpone mixture.',
+            'Mix coffee and rum in a shallow dish. Dip ladyfingers briefly (1 second per side).',
+            'Layer dipped ladyfingers in bottom of 9x13" dish. Spread half of cream mixture over top.',
+            'Repeat with another layer of ladyfingers and remaining cream.',
+            'Cover and refrigerate for at least 4 hours, preferably overnight.',
+            'Dust generously with cocoa powder before serving.'
+        ]
+    },
+    'focaccia': {
+        title: 'Rosemary Focaccia',
+        story: 'Focaccia taught me to be aggressive with my dough. The "why" behind the dimpling? Pushing your fingers deep into the dough creates pockets for olive oil and brine to pool, ensuring every bite is flavorful and moist. I learned that a high-hydration dough (lots of water!) creates those big, airy bubbles. Generous olive oil on the pan fries the bottom crust to a golden crunch. This bread taught me that sometimes, the best technique is to get your hands messy and have fun.',
+        ingredients: [
+            '4 cups bread flour',
+            '2 tsp kosher salt',
+            '2 1/4 tsp instant yeast',
+            '2 cups warm water',
+            '1 tsp sugar',
+            '1/4 cup extra virgin olive oil (plus more for drizzling)',
+            '2 tbsp fresh rosemary, chopped',
+            'Flaky sea salt'
+        ],
+        instructions: [
+            'Whisk flour, salt, and yeast in a large bowl. Add warm water and sugar.',
+            'Mix with a spatula until a sticky dough forms. Cover and refrigerate for 12-18 hours (or rise at room temp for 4 hours).',
+            'Pour 2 tbsp olive oil into a 9x13" baking pan. Transfer dough to pan, turning to coat in oil.',
+            'Let rise uncovered in a warm spot for 2-4 hours until it fills the pan.',
+            'Preheat oven to 425°F (220°C).',
+            'Drizzle dough with 2 tbsp olive oil. Use fingers to dimple the dough deeply all over.',
+            'Sprinkle with rosemary and flaky sea salt.',
+            'Bake for 25-30 minutes until golden brown and crisp.',
+            'Cool in pan for 10 minutes, then transfer to wire rack.'
+        ]
+    },
+    'carrot-cake': {
+        title: 'Spiced Carrot Cake',
+        story: 'Carrot cake taught me that vegetables belong in dessert. The "why" behind grating carrots fresh? Pre-shredded carrots are dry; fresh ones release moisture during baking, keeping the cake tender for days. I learned that oil (instead of butter) keeps the crumb moist even when chilled. The spices—cinnamon, nutmeg, ginger—bloom in the fat, intensifying their flavor. This cake taught me that true comfort food often comes from humble ingredients transformed by spice and sweetness.',
+        ingredients: [
+            '2 cups all-purpose flour',
+            '2 tsp baking soda',
+            '1/2 tsp salt',
+            '1 1/2 tsp ground cinnamon',
+            '1 1/4 cups canola oil',
+            '1 cup sugar',
+            '1 cup brown sugar',
+            '1 tsp vanilla extract',
+            '4 large eggs',
+            '3 cups grated peeled carrots (5-6 medium carrots)',
+            '1 cup chopped pecans (optional)',
+            'Frosting: 8 oz cream cheese, 1/2 cup butter, 3 cups powdered sugar'
+        ],
+        instructions: [
+            'Preheat oven to 350°F (175°C). Grease two 9" round pans.',
+            'Whisk flour, baking soda, salt, and cinnamon in a bowl.',
+            'In a separate bowl, whisk oil, sugars, and vanilla. Add eggs one at a time.',
+            'Stir dry ingredients into wet ingredients until just combined.',
+            'Fold in carrots and pecans.',
+            'Divide batter between pans. Bake for 35-45 minutes until toothpick comes out clean.',
+            'Cool in pans for 15 minutes, then turn out onto racks to cool completely.',
+            'Beat cream cheese and butter until smooth. Add powdered sugar and beat until creamy.',
+            'Frost cooled cake. Decorate with extra pecans if desired.'
+        ]
     }
 };
 
