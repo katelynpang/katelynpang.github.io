@@ -1,27 +1,369 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-	<title>katelynpang.com</title>
-
-	<link rel="icon" href="favicon.ico" type="image/png" />
-	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
-	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Katelyn's Kitchen</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <!-- Header/Navigation -->
+    <header class="header glass">
+        <nav class="nav">
+            <a href="#home" class="logo">
+                <span class="logo-badge">KP</span>
+            </a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#recipes" class="nav-link">Recipes</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
 
-	<main class="light-mode">
-		<div class="intro">Hi|Hola|Salut|您好|やあ|안녕</br>I'm Katelyn!</div>
-		<div class="tagline"></div>
-	</main>
-	
+    <!-- Hero Section -->
+    <section id="home" class="section hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge">High School Student | Youth Mentor | Baker</div>
+                <h1 class="hero-title">Driven by <br><span class="gradient-text">Impact & Creativity</span></h1>
+                <p class="hero-subtitle">
+                    I’m Katelyn, a high school student dedicated to community building, leadership, and the culinary arts. I blend academic excellence with a passion for mentorship and baking. Here, I share my baking journey—recipes that tell stories of experimentation, growth, and delicious discoveries. Enjoy!
+                </p>
+                <div class="hero-cta">
+                    <a href="#recipes" class="btn btn-primary">Explore Recipes</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="finance-card glass-panel">
+                    <div class="card-header">
+                        <div class="card-title">Baking Philosophy</div>
+                        <div class="live-indicator"><span class="dot"></span> Creating</div>
+                    </div>
+                    <div class="card-body">
+                        <div class="metric-row">
+                            <div class="metric-label">Approach</div>
+                            <div class="metric-value">Experiment & Learn</div>
+                        </div>
+                        <div class="metric-row">
+                            <div class="metric-label">Specialty</div>
+                            <div class="metric-value">Brownies & Pastries</div>
+                        </div>
+                        <div class="metric-row">
+                            <div class="metric-label">Style</div>
+                            <div class="metric-value">From Scratch</div>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="market-stat">
+                            <div class="stat-label">Recipes Shared</div>
+                            <div class="stat-value">15+</div>
+                        </div>
+                        <div class="market-stat">
+                            <div class="stat-label">Baking Since</div>
+                            <div class="stat-value">2020</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipes Section -->
+    <section id="recipes" class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Recipes</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle" style="text-align: center; margin-top: 1rem; color: var(--text-secondary); max-width: 700px; margin-left: auto; margin-right: auto;">
+                    Each recipe here represents more than just ingredients—it's a story of experimentation, failure, growth, and ultimately, creation. From my perfect brownie to new adventures, these are the results of understanding the <em>why</em> behind every technique. Click on any recipe to see the full ingredients and step-by-step instructions.
+                </p>
+            </div>
+            
+            <div class="recipes-grid">
+                <!-- Recipe 1 - The Perfect Brownie (Featured) -->
+                <article class="recipe-card featured-recipe">
+                    <div class="recipe-image-container">
+                        <img src="assets/recipe4.png" alt="Perfect Fudgy Brownies" class="recipe-image" onerror="this.src='https://placehold.co/600x400/e8dcc8/3d3226?text=Brownies'">
+                        <div class="recipe-badge">Signature Recipe</div>
+                    </div>
+                    <div class="recipe-content">
+                        <h3>The Perfect Brownie</h3>
+                        <p>Rich, fudgy, with that signature crackly top. After weeks of testing, this is my ideal brownie recipe.</p>
+                        <div class="recipe-tags">
+                            <span class="tag">Brownies</span>
+                            <span class="tag">Chocolate</span>
+                        </div>
+                        <button class="view-recipe-btn" onclick="openRecipe('perfect-brownie')">View Recipe</button>
+                    </div>
+                </article>
+
+                <!-- Recipe 2 -->
+                <article class="recipe-card">
+                    <div class="recipe-image-container">
+                        <img src="assets/recipe1.png" alt="Matcha White Chocolate Cookies" class="recipe-image" onerror="this.src='https://placehold.co/600x400/e8dcc8/3d3226?text=Matcha+Cookies'">
+                    </div>
+                    <div class="recipe-content">
+                        <h3>Matcha White Chocolate Cookies</h3>
+                        <p>Earthy matcha meets sweet white chocolate in these perfectly chewy cookies.</p>
+                        <div class="recipe-tags">
+                            <span class="tag">Cookies</span>
+                            <span class="tag">Matcha</span>
+                        </div>
+                        <button class="view-recipe-btn" onclick="openRecipe('matcha-cookies')">View Recipe</button>
+                    </div>
+                </article>
+
+                <!-- Recipe 3 -->
+                <article class="recipe-card">
+                    <div class="recipe-image-container">
+                        <img src="assets/recipe2.png" alt="Classic Sourdough Bread" class="recipe-image" onerror="this.src='https://placehold.co/600x400/e8dcc8/3d3226?text=Sourdough'">
+                    </div>
+                    <div class="recipe-content">
+                        <h3>Classic Sourdough Bread</h3>
+                        <p>Artisan sourdough with a crackly crust and open crumb, fermented for 24 hours.</p>
+                        <div class="recipe-tags">
+                            <span class="tag">Bread</span>
+                            <span class="tag">Sourdough</span>
+                        </div>
+                        <button class="view-recipe-btn" onclick="openRecipe('sourdough')">View Recipe</button>
+                    </div>
+                </article>
+
+                <!-- Recipe 4 -->
+                <article class="recipe-card">
+                    <div class="recipe-image-container">
+                        <img src="assets/recipe3.png" alt="Strawberry Shortcake" class="recipe-image" onerror="this.src='https://placehold.co/600x400/e8dcc8/3d3226?text=Strawberry+Shortcake'">
+                    </div>
+                    <div class="recipe-content">
+                        <h3>Strawberry Shortcake</h3>
+                        <p>Light biscuits layered with fresh strawberries and homemade whipped cream.</p>
+                        <div class="recipe-tags">
+                            <span class="tag">Cake</span>
+                            <span class="tag">Fruit</span>
+                        </div>
+                        <button class="view-recipe-btn" onclick="openRecipe('strawberry-shortcake')">View Recipe</button>
+                    </div>
+                </article>
+
+                <!-- Recipe 5 -->
+                <article class="recipe-card">
+                    <div class="recipe-image-container">
+                        <img src="assets/recipe5.png" alt="Lemon Tart" class="recipe-image" onerror="this.src='https://placehold.co/600x400/e8dcc8/3d3226?text=Lemon+Tart'">
+                    </div>
+                    <div class="recipe-content">
+                        <h3>Tangy Lemon Tart</h3>
+                        <p>Buttery shortbread crust with silky lemon curd. Sweet and tart perfection.</p>
+                        <div class="recipe-tags">
+                            <span class="tag">Tart</span>
+                            <span class="tag">Citrus</span>
+                        </div>
+                        <button class="view-recipe-btn" onclick="openRecipe('lemon-tart')">View Recipe</button>
+                    </div>
+                </article>
+
+                <!-- Recipe 6 -->
+                <article class="recipe-card">
+                    <div class="recipe-image-container">
+                        <img src="assets/recipe6.png" alt="Cinnamon Rolls" class="recipe-image" onerror="this.src='https://placehold.co/600x400/e8dcc8/3d3226?text=Cinnamon+Rolls'">
+                    </div>
+                    <div class="recipe-content">
+                        <h3>Fluffy Cinnamon Rolls</h3>
+                        <p>Soft, pillowy rolls with cinnamon sugar and cream cheese frosting.</p>
+                        <div class="recipe-tags">
+                            <span class="tag">Bread</span>
+                            <span class="tag">Breakfast</span>
+                        </div>
+                        <button class="view-recipe-btn" onclick="openRecipe('cinnamon-rolls')">View Recipe</button>
+                    </div>
+                </article>
+
+                <!-- Recipe 7 - NEW -->
+                <article class="recipe-card">
+                    <div class="recipe-image-container">
+                        <img src="assets/recipe7.png" alt="Chocolate Chip Cookies" class="recipe-image" onerror="this.src='https://placehold.co/600x400/e8dcc8/3d3226?text=Chocolate+Chip'">
+                    </div>
+                    <div class="recipe-content">
+                        <h3>Classic Chocolate Chip Cookies</h3>
+                        <p>The ultimate chocolate chip cookie—crispy edges, gooey center, loaded with chips.</p>
+                        <div class="recipe-tags">
+                            <span class="tag">Cookies</span>
+                            <span class="tag">Classic</span>
+                        </div>
+                        <button class="view-recipe-btn" onclick="openRecipe('chocolate-chip')">View Recipe</button>
+                    </div>
+                </article>
+
+                <!-- Recipe 8 - NEW -->
+                <article class="recipe-card">
+                    <div class="recipe-image-container">
+                        <img src="assets/recipe8.png" alt="Banana Bread" class="recipe-image" onerror="this.src='https://placehold.co/600x400/e8dcc8/3d3226?text=Banana+Bread'">
+                    </div>
+                    <div class="recipe-content">
+                        <h3>Moist Banana Bread</h3>
+                        <p>Ultra-moist banana bread with a hint of cinnamon and optional chocolate chips.</p>
+                        <div class="recipe-tags">
+                            <span class="tag">Bread</span>
+                            <span class="tag">Banana</span>
+                        </div>
+                        <button class="view-recipe-btn" onclick="openRecipe('banana-bread')">View Recipe</button>
+                    </div>
+                </article>
+
+                <!-- Recipe 9 - NEW -->
+                <article class="recipe-card">
+                    <div class="recipe-image-container">
+                        <img src="assets/recipe9.png" alt="French Macarons" class="recipe-image" onerror="this.src='https://placehold.co/600x400/e8dcc8/3d3226?text=Macarons'">
+                    </div>
+                    <div class="recipe-content">
+                        <h3>French Macarons</h3>
+                        <p>Delicate almond cookies with smooth tops, ruffled feet, and creamy filling.</p>
+                        <div class="recipe-tags">
+                            <span class="tag">Cookies</span>
+                            <span class="tag">French</span>
+                        </div>
+                        <button class="view-recipe-btn" onclick="openRecipe('macarons')">View Recipe</button>
+                    </div>
+                </article>
+
+                <!-- Recipe 10 - NEW -->
+                <article class="recipe-card">
+                    <div class="recipe-image-container">
+                        <img src="assets/recipe10.png" alt="Blueberry Muffins" class="recipe-image" onerror="this.src='https://placehold.co/600x400/e8dcc8/3d3226?text=Blueberry+Muffins'">
+                    </div>
+                    <div class="recipe-content">
+                        <h3>Blueberry Muffins</h3>
+                        <p>Fluffy muffins bursting with fresh blueberries and a sweet crumb topping.</p>
+                        <div class="recipe-tags">
+                            <span class="tag">Muffins</span>
+                            <span class="tag">Berries</span>
+                        </div>
+                        <button class="view-recipe-btn" onclick="openRecipe('blueberry-muffins')">View Recipe</button>
+                    </div>
+                </article>
+
+                <!-- Recipe 11 - NEW -->
+                <article class="recipe-card">
+                    <div class="recipe-image-container">
+                        <img src="assets/recipe11.png" alt="Red Velvet Cake" class="recipe-image" onerror="this.src='https://placehold.co/600x400/e8dcc8/3d3226?text=Red+Velvet'">
+                    </div>
+                    <div class="recipe-content">
+                        <h3>Red Velvet Cake</h3>
+                        <p>Moist red velvet layers with tangy cream cheese frosting. A classic favorite.</p>
+                        <div class="recipe-tags">
+                            <span class="tag">Cake</span>
+                            <span class="tag">Classic</span>
+                        </div>
+                        <button class="view-recipe-btn" onclick="openRecipe('red-velvet')">View Recipe</button>
+                    </div>
+                </article>
+
+                <!-- Recipe 12 - NEW -->
+                <article class="recipe-card">
+                    <div class="recipe-image-container">
+                        <img src="assets/recipe12.png" alt="Pumpkin Pie" class="recipe-image" onerror="this.src='https://placehold.co/600x400/e8dcc8/3d3226?text=Pumpkin+Pie'">
+                    </div>
+                    <div class="recipe-content">
+                        <h3>Classic Pumpkin Pie</h3>
+                        <p>Spiced pumpkin filling in a flaky butter crust. Perfect for fall gatherings.</p>
+                        <div class="recipe-tags">
+                            <span class="tag">Pie</span>
+                            <span class="tag">Seasonal</span>
+                        </div>
+                        <button class="view-recipe-btn" onclick="openRecipe('pumpkin-pie')">View Recipe</button>
+                    </div>
+                </article>
+
+                <!-- Recipe 13 - NEW -->
+                <article class="recipe-card">
+                    <div class="recipe-image-container">
+                        <img src="assets/recipe13.png" alt="Croissants" class="recipe-image" onerror="this.src='https://placehold.co/600x400/e8dcc8/3d3226?text=Croissants'">
+                    </div>
+                    <div class="recipe-content">
+                        <h3>Buttery Croissants</h3>
+                        <p>Flaky, layered French pastries with a golden crust. Worth the effort!</p>
+                        <div class="recipe-tags">
+                            <span class="tag">Pastry</span>
+                            <span class="tag">French</span>
+                        </div>
+                        <button class="view-recipe-btn" onclick="openRecipe('croissants')">View Recipe</button>
+                    </div>
+                </article>
+
+                <!-- Recipe 14 - NEW -->
+                <article class="recipe-card">
+                    <div class="recipe-image-container">
+                        <img src="assets/recipe14.png" alt="Cheesecake" class="recipe-image" onerror="this.src='https://placehold.co/600x400/e8dcc8/3d3226?text=Cheesecake'">
+                    </div>
+                    <div class="recipe-content">
+                        <h3>New York Cheesecake</h3>
+                        <p>Creamy, dense cheesecake with graham cracker crust. Perfectly smooth.</p>
+                        <div class="recipe-tags">
+                            <span class="tag">Cheesecake</span>
+                            <span class="tag">Classic</span>
+                        </div>
+                        <button class="view-recipe-btn" onclick="openRecipe('cheesecake')">View Recipe</button>
+                    </div>
+                </article>
+
+                <!-- Recipe 15 - NEW -->
+                <article class="recipe-card">
+                    <div class="recipe-image-container">
+                        <img src="assets/recipe15.png" alt="Apple Pie" class="recipe-image" onerror="this.src='https://placehold.co/600x400/e8dcc8/3d3226?text=Apple+Pie'">
+                    </div>
+                    <div class="recipe-content">
+                        <h3>Classic Apple Pie</h3>
+                        <p>Tender cinnamon apples in a buttery double crust. American classic at its best.</p>
+                        <div class="recipe-tags">
+                            <span class="tag">Pie</span>
+                            <span class="tag">Fruit</span>
+                        </div>
+                        <button class="view-recipe-btn" onclick="openRecipe('apple-pie')">View Recipe</button>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="contact-wrapper glass-panel">
+                <div class="contact-content">
+                    <h2 class="section-title">Let's Connect</h2>
+                    <p class="contact-intro">
+                        Have questions about a recipe? Want to share your baking results?<br> I'd love to hear from you!
+                    </p>
+                    <div class="social-links">
+                        <span class="social-link">
+                            <span class="link-icon"><i class="ri-mail-line"></i></span> me@katelynpang.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recipe Modal -->
+    <div id="recipe-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeRecipe()">&times;</span>
+            <div id="modal-body">
+                <!-- Content injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
