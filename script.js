@@ -571,11 +571,58 @@ function initSmoothScroll() {
 }
 
 // ========================================
+// Navigation Logic
+// ========================================
+function initNavigation() {
+    const hamburger = document.querySelector('.hamburger-menu');
+    const dropdown = document.querySelector('.nav-dropdown');
+    
+    if (hamburger && dropdown) {
+        // Toggle menu
+        hamburger.addEventListener('click', (e) => {
+            e.stopPropagation();
+            dropdown.classList.toggle('active');
+            
+            // Update icon
+            const icon = hamburger.querySelector('i');
+            if (dropdown.classList.contains('active')) {
+                icon.classList.remove('ri-menu-line');
+                icon.classList.add('ri-close-line');
+            } else {
+                icon.classList.remove('ri-close-line');
+                icon.classList.add('ri-menu-line');
+            }
+        });
+
+        // Close when clicking a link
+        dropdown.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                dropdown.classList.remove('active');
+                const icon = hamburger.querySelector('i');
+                icon.classList.remove('ri-close-line');
+                icon.classList.add('ri-menu-line');
+            });
+        });
+
+        // Close when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!dropdown.contains(e.target) && !hamburger.contains(e.target)) {
+                dropdown.classList.remove('active');
+                const icon = hamburger.querySelector('i');
+                icon.classList.remove('ri-close-line');
+                icon.classList.add('ri-menu-line');
+            }
+        });
+    }
+}
+
+// ========================================
 // Initialize
 // ========================================
 document.addEventListener('DOMContentLoaded', () => {
     initAnimations();
     initSmoothScroll();
+    initNavigation();
     
     console.log('%c Katelyn\'s Kitchen ', 'background: #c9a882; color: white; padding: 4px; border-radius: 4px;');
 });
